@@ -9,9 +9,6 @@ model = joblib.load('clf.pkl')
 
 st.set_page_config(page_title="Accident Severity Prediction App",
                   layout="wide")
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
 
  
     
