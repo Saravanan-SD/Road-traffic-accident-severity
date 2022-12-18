@@ -10,6 +10,9 @@ model = joblib.load('clf.pkl')
 st.set_page_config(page_title="Accident Severity Prediction App",
                   layout="wide")
 
+video_file = open('myvideo.mp4', 'rb')
+video_bytes = video_file.read()
+st.video(video_bytes)
 
 #creating option list for dropdown menu
 options_day = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
