@@ -11,7 +11,7 @@ st.set_page_config(page_title="Accident Severity Prediction App",
                   layout="wide")
 add_selectbox = st.sidebar.selectbox(
     'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone')
+    ('Email', 'Home phone', 'Mobile phone'))
 
 #creating option list for dropdown menu
 options_day = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
