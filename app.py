@@ -5,7 +5,7 @@ import joblib
 from sklearn.ensemble import RandomForestClassifier
 from prediction import get_prediction, ordinal_encoder
 
-model = joblib.load('model/Random_forest_classifier.pkl')
+model = joblib.load('clf.pkl')
 
 st.set_page_config(page_title="Accident Severity Prediction App",
                   layout="wide")
