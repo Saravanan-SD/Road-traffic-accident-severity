@@ -9,8 +9,13 @@ model = joblib.load('clf.pkl')
 
 st.set_page_config(page_title="Accident Severity Prediction App",
                   layout="wide")
-# Object notation
-st.sidebar.['element_name']
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
 
 #creating option list for dropdown menu
 options_day = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
