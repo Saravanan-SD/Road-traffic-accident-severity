@@ -13,10 +13,8 @@ with st.sidebar:
     with st.echo():
         st.write("This code will be printed to the sidebar.")
 
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
-
+ 
+    
 #creating option list for dropdown menu
 options_day = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 options_age = ['18-30', '31-50', 'Over 51', 'Unknown', 'Under 18']
